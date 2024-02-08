@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <title>StakeBaby | Peace-of-mind Crypto Staking</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- CSS Assets -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Javascript Assets -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body x-data class="is-header-blur" x-bind="$store.global.documentBody">
+    <!-- App preloader-->
+    <div
+      class="app-preloader fixed z-50 grid h-full w-full place-content-center bg-slate-50 dark:bg-navy-900"
+    >
+      <div class="app-preloader-inner relative inline-block h-48 w-48"></div>
+    </div>
+
+    <!-- Page Wrapper -->
+    <div
+      id="root"
+      class="min-h-100vh bg-slate-50 dark:bg-navy-900"
+      x-cloak
+    >
+      <header class="pt-[5rem] min-h-screen 2xl:h-[956px] before:content-[''] before:absolute relative lg:before:z-20 bg-headerBg bg-[url('images/section-1@2x.jpg')] bg-no-repeat bg-cover bg-bottom md:bg-[left_-20rem_bottom] xl:bg-center before:bg-[url('images/gdt.svg')] before:bg-no-repeat before:right-0 before:bottom-0 before:w-11/12 before:h-[26px] before:bg-cover">
+        <div class="container max-w-[1700px] lg:pl-[116px] lg:pr-[1rem] mx-auto">
+          <div class="flex justify-between">
+            <a href="/" class="flex flex-col text-center transition duration-150 ease hover:opacity-70">
+              <picture>
+                <source srcset="images/logo.png, images/logo@2x.png 1.5x" type="image/png">
+                <img class="w-[8.5rem]" src="images/logo.png" srcset="images/logo@2x.png 1.5x" alt="Image" data-xblocker="passed" style="visibility: visible;">
+              </picture>
+              <p class="text-3xl font-bold">
+                STAKE<br/>MOVR
+              </p>
+            </a>
+            <button class="w-[3.75rem] h-[3.75rem] mt-[-10px] burger relative z-20" aria-label="menu">
+              <svg class="w-full h-full hover:fill-white transition duration-150 ease" style="transform: rotateY(180deg)">
+                <use xlink:href="./images/sprite.svg#hamburger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-col mt-[5rem] lg:mt-[6.25rem]">
+            <h1 class="font-['Brandon'] uppercase font-light text-[3.5rem] lg:text-7.5xl leading-[1.1] text-darkText tracking-[4.5px]">Peace <br>of-mind <br>crypto<br>Staking
+            </h1>
+            <div class="flex items-center mt-[3.125rem]">
+              <picture>
+                <source srcset="images/dvn.webp, images/dvn@2x.webp 1.5x" type="image/webp">
+                <img class="w-[6rem] h-[6rem] md:w-[6.125rem] md:h-[6.125rem]" src="images/dvn.jpg" srcset="images/dvn@2x.jpg 1.5x" alt="Image">
+              </picture>
+              <p class="text-[1.125rem] font-['SpaceMono'] font-bold ml-[1rem] md:ml-[1.875rem] mt-[0.9rem] uppercase text-[#2d2d2d]">✵ DVN is now stakebaby</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="min-h-screen h-auto 2xl:h-[1279px] bg-[url('images/section-2@2x.jpg')] bg-no-repeat bg-cover bg-center">
+          <div class="min-h-screen h-auto 2xl:h-[1279px] wrapper w-11/12 lg:pl-[144px] ml-auto pl-[2rem] before:content-[''] before:absolute relative before:top-0 before:left-0 before:h-full before:w-[2px] before:bg-[#d4d4d4] after:content-[''] after:absolute after:top-[52vh] 2xl:after:top-[72vh] after:left-[-3px] after:h-[200px] lg:after:h-[235px] after:w-[8px] after:bg-accentColor">
+            <div class="flex flex-col pt-[55vh]  2xl:pt-[75.5vh] md:tracking-[4px] max-w-[15.75rem] md:max-w-md">
+              <h2 class="text-accentColor text-[2.3rem] md:text-5xl uppercase leading-[3.5rem] md:leading-[4.5rem] lg:text-6xl">Established player</h2>
+              <p class="mt-4 lg:mt-6 font-medium text-[1.5rem] lg:text-[1.75rem] uppercase text-[#f8f8f8]">$20m in Backing</p>
+            </div>
+          </div>
+        </section>
+        <section class="min-h-screen h-auto 2xl:h-[1226px] bg-[url('images/section-3@2x.jpg')] bg-no-repeat bg-cover bg-center">
+          <div class="flex flex-col pt-[20vh] md:pt-[24.5vh] 2xl:pt-[31.8vh] max-w-[15.75rem] md:max-w-[20.625rem] mr-auto ml-[20%] sm:ml-[40%] md:ml-[55%]">
+            <h2 class="text-darkText text-[2.5rem] md:text-5xl uppercase leading-[3.5rem] md:leading-[4.5rem] tracking-[4px] lg:text-6xl">The most Tasty Staking Rewards</h2>
+            <button class="mt-4 lg:mt-8 ml-1 font-['Nunito'] font-medium text-[1.75rem] lg:text-[2.25rem] tracking-widest uppercase text-white w-[14.375rem] h-[4.375rem] bg-[#c80b7a] transition ease duration-150 border-2 border-[transparent] hover:border-[#c80b7a] hover:bg-transparent hover:text-[#c80b7a]">Period.</button>
+          </div>
+        </section>
+        <section class="min-h-[85vh] h-auto 2xl:h-[1084px] bg-[url('images/section-4@2x.jpg')] bg-no-repeat bg-cover bg-[right_-14rem_center] md:bg-right">
+          <div class="min-h-screen h-auto 2xl:h-[1279px] wrapper w-11/12 lg:pl-[152px] ml-auto pl-[2rem] before:content-[''] before:absolute relative before:top-0 before:left-0 before:h-full before:w-[2px] before:bg-[#d4d4d4] after:content-[''] after:absolute after:top-[18vh] 2xl:after:top-[18vh] after:left-[-3px] after:h-[172px] lg:after:h-[172px] after:w-[8px] after:bg-accentColor">
+            <div class="flex flex-col pt-[16.5vh]  2xl:pt-[10%] max-w-[15.75rem] md:max-w-[350px]">
+              <p class="text-[#2b2b2b] font-medium text-[1.5rem] md:text-[2rem] md:tracking-[2.75px] uppercase">We dance across</p>
+              <h2 class="text-accentColor font-medium text-[3.5rem] sm:text-[4.375rem] md:text-[4.875rem] mt-[1.25rem] leading-[1] tracking-[8px] sm:tracking-[17.5px] opacity-60 uppercase ml-[0.5rem] relative after:content-['Seven'] after:text-[#d55da4] after:absolute after:left-[-8px] after:top-[-2px]">Seven</h2>
+              <p class="mt-2 text-[1.5rem] md:text-[2rem] uppercase md:tracking-[13px] text-[#2b2b2b]">Networks</p>
+            </div>
+            <div class="swiper swiper-logo sm:max-w-[380px] md:max-w-[560px] min-h-[4rem] mt-[250px] ml-0 pb-[80px] sm:pb-0 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+              <div class="swiper-wrapper" id="swiper-wrapper-68eff1098557f0abf" aria-live="polite" style="transform: translate3d(-560px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide flex items-center justify-flex-start sm:justify-center swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="6" role="group" aria-label="7 / 7" style="width: 560px;">
+                  <a href="https://www.polkadex.trade/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/polkadex-logo.png" alt="Polkadex" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+                <div class="swiper-slide flex items-center justify-flex-start sm:justify-center swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 7" style="width: 560px;">
+                  <a href="https://www.composable.finance/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/composable-finance-logo.png" alt="Composable Finance" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+                <div class="swiper-slide flex items-center justify-flex-start sm:justify-center swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 7" style="width: 560px;">
+                  <a href="https://moonbeam.foundation/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/moonriver-logo.png" alt="Moonriver" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+                <div class="swiper-slide flex items-center justify-flex-start sm:justify-center" data-swiper-slide-index="2" role="group" aria-label="3 / 7" style="width: 560px;">
+                  <a href="https://moonbeam.foundation/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/moonbeam-logo.png" alt="Moonbeam" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+                <div class="swiper-slide flex items-center justify-flex-start sm:justify-center" data-swiper-slide-index="3" role="group" aria-label="4 / 7" style="width: 560px;">
+                  <a href="https://polygon.technology/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/polygon-matic-logo.png" alt="Polygon Matic" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+                <div class="swiper-slide flex items-center justify-flex-start sm:justify-center" data-swiper-slide-index="4" role="group" aria-label="5 / 7" style="width: 560px;">
+                  <a href="https://www.kilt.io/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/kilt-logo.png" alt="KILT" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+                <div class="swiper-slide flex items-center justify-flex-start sm:justify-center" data-swiper-slide-index="5" role="group" aria-label="6 / 7" style="width: 560px;">
+                  <a href="https://www.syntropynet.com/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/syntropy-logo.png" alt="Syntropy" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+                <div class="swiper-slide flex items-center justify-flex-start sm:justify-center swiper-slide-duplicate-prev" data-swiper-slide-index="6" role="group" aria-label="7 / 7" style="width: 560px;">
+                  <a href="https://www.polkadex.trade/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/polkadex-logo.png" alt="Polkadex" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div>
+              <div class="swiper-slide flex items-center justify-flex-start sm:justify-center swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 7" style="width: 560px;">
+                  <a href="https://www.composable.finance/" class="hover:opacity-60 transition ease duration-150" target="_blank">
+                    <img src="images/partner-logos/composable-finance-logo.png" alt="Composable Finance" data-xblocker="passed" style="visibility: visible;">
+                  </a>
+                </div></div>
+              <svg class="swiper-button-prev w-[50px] md:w-[74px] h-[40px] md:h-[60px] fill-[#6c6c6c] hover:fill-accentColor transition duration-150 ease mt-0 bottom-0 top-auto sm:top-[50%] sm:bottom-auto left-[40px] sm:left-0" style="transform: rotateY(180deg) translateY(-50%);" tabIndex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-68eff1098557f0abf">
+                <use xlink:href="./images/sprite.svg#right-arrow"></use>
+              </svg>
+              <svg class="swiper-button-next w-[50px] md:w-[74px] h-[40px] md:h-[60px] fill-[#6c6c6c] hover:fill-accentColor transition duration-150 ease mt-0 bottom-0 top-auto sm:top-[50%] sm:bottom-auto left-[120px] sm:left-auto sm:right-0" style="transform: translateY(-50%)" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-68eff1098557f0abf">
+                <use xlink:href="./images/sprite.svg#right-arrow"></use>
+              </svg>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+        </section>
+        <section class="min-h-[85vh] h-auto 2xl:h-[1070px] bg-[url('images/section-5@2x.jpg')] bg-no-repeat bg-cover bg-center px-[1rem] sm:px-0">
+          <div class="flex flex-col pt-[15vh] md:pt-[18vh] 2xl:pt-[12.2%] max-w-[300px] md:max-w-[610px] m-auto text-center">
+            <h2 class="text-[#2b2b2b] font-light text-[2.5rem] md:text-5xl uppercase tracking-[3.5px] lg:text-6xl leading-[3rem] md:leading-[initial]">100% Node Uptime</h2>
+            <div class="flex items-center justify-center mt-2 lg:mt-4 font-['Nunito'] font-medium text-[1.5rem] md:text-[2rem] lg:text-[2.25rem] tracking-[0.45rem] px-6 md:px-0 uppercase text-white h-[120px] md:h-[70px] bg-[#0096ce] bg-opacity-70 leading-[2rem] md:leading-[initial]">100% active-set time</div>
+          </div>
+        </section>
+        <section class="min-h-[80vh] h-auto 2xl:h-[898px] bg-[url('images/section-6@2x.jpg')] bg-no-repeat bg-cover bg-center">
+          <div class="flex flex-col pb-[5%] pt-[30vh] md:pt-[40vh] lg:pt-[45vh] 2xl:pt-[20.5%] md:max-w-[550px] mr-auto ml-[1rem] sm:ml-[30%] lg:ml-[40%] 2xl:ml-[48%]">
+            <h2 class="text-[#2b2b2b] text-[2.5rem] md:text-5xl lg:text-6xl uppercase leading-[3rem] md:leading-[3.5rem] lg:leading-[4.5rem] tracking-[5.5px]">We<br>want<br><span class="font-regular text-[#d50c82]">Democracy</span></h2>
+            <ul class="flex flex-col list-disc ml-[24px] mt-4 md:mt-8 lg:mt-16 pr-[1rem]">
+              <li class="font-['SpaceMono'] font-bold text-[1rem] md:text-[18px] lg:text-[21px] uppercase pl-1 lg:pl-5 text-[#bb0b72] tracking-[1.1px]"><span class="text-[#2b2b2b]">Our validators are community-backed</span></li>
+              <li class="font-['SpaceMono'] font-bold text-[1rem] md:text-[18px] lg:text-[21px] uppercase pl-1 lg:pl-5 text-[#bb0b72] tracking-[1.1px] mt-[0.5rem] md:mt-[1rem] lg:mt-[1.7rem]"><span class="text-[#2b2b2b]">We give back to the community</span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="min-h-[80vh] h-auto 2xl:h-[893px] bg-[url('images/section-7@2x.jpg')] bg-no-repeat bg-cover">
+          <div class="min-h-[80vh] h-auto 2xl:h-[893px] wrapper w-11/12 lg:pl-[152px] ml-auto pl-[2rem] before:content-[''] before:absolute relative before:top-0 before:left-0 before:h-full before:w-[2px] before:bg-[#d4d4d4] after:content-[''] after:absolute after:top-[16.5vh] lg:after:top-[18vh] 2xl:after:top-[21.5%] after:left-[-3px] after:h-[180px] lg:after:h-[235px] after:w-[8px] after:bg-accentColor">
+            <div class="flex flex-col pt-[16.5vh]  2xl:pt-[10.8%] max-w-[390] md:max-w-[390px]">
+              <h2 class="text-[#2b2b2b] font-['Brandon'] font-light text-[2.3rem] md:text-5xl uppercase tracking-[3.8px] lg:text-6xl leading-[3rem] lg:leading-[4.6rem]"><span class="font-['Nunito' font-light] text-white">We</span><br><span class="text-white">Expect</span><br><span class="font-['Brandon'] font-regular text-white">the future</span></h2>
+              <p class="font-['SpaceMono'] font-bold text-[16px] lg:text-[18px] uppercase tracking-[1.3px] ml-1 mt-[1rem] lg:mt-[1.3rem]">And build for IT</p>
+            </div>
+            <ul class="flex flex-col list-disc ml-[1.5rem] md:ml-[25.7%] mt-8 lg:mt-[3.2rem] pr-[1rem]">
+              <li class="font-['SpaceMono'] font-bold text-[1rem] md:text-[18px] lg:text-[21px] uppercase pl-1 lg:pl-5 text-[#darkText] tracking-[1.1px]"><span class="text-[#2b2b2b]">Blockchain analysis tools</span></li>
+              <li class="font-['SpaceMono'] font-bold text-[1rem] md:text-[18px] lg:text-[21px] uppercase pl-1 lg:pl-5 text-[#darkText] tracking-[1.1px] mt-[0.5rem] md:mt-[1rem] lg:mt-[1.7rem]"><span class="text-[#2b2b2b]">Staking smart contracts</span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="min-h-[80vh] h-auto 2xl:h-[896px] bg-[url('images/section-8@2x.jpg')] bg-no-repeat bg-cover bg-center">
+          <div class="flex flex-col items-end md:items-start pb-[5%] pt-[15vh] md:pt-[15vh] lg:pt-[18vh] 2xl:pt-[8.3%] 2xl:max-w-[566px] mr-auto ml-[1rem] md:ml-[55%] pr-[1rem] text-right md:text-left">
+            <!--?xml version="1.0" encoding="iso-8859-1"?-->
+            
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="25px" viewBox="0 0 95.333 95.332" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M30.512,43.939c-2.348-0.676-4.696-1.019-6.98-1.019c-3.527,0-6.47,0.806-8.752,1.793
+                    c2.2-8.054,7.485-21.951,18.013-23.516c0.975-0.145,1.774-0.85,2.04-1.799l2.301-8.23c0.194-0.696,0.079-1.441-0.318-2.045
+                    s-1.035-1.007-1.75-1.105c-0.777-0.106-1.569-0.16-2.354-0.16c-12.637,0-25.152,13.19-30.433,32.076
+                    c-3.1,11.08-4.009,27.738,3.627,38.223c4.273,5.867,10.507,9,18.529,9.313c0.033,0.001,0.065,0.002,0.098,0.002
+                    c9.898,0,18.675-6.666,21.345-16.209c1.595-5.705,0.874-11.688-2.032-16.851C40.971,49.307,36.236,45.586,30.512,43.939z"></path>
+                  <path d="M92.471,54.413c-2.875-5.106-7.61-8.827-13.334-10.474c-2.348-0.676-4.696-1.019-6.979-1.019
+                    c-3.527,0-6.471,0.806-8.753,1.793c2.2-8.054,7.485-21.951,18.014-23.516c0.975-0.145,1.773-0.85,2.04-1.799l2.301-8.23
+                    c0.194-0.696,0.079-1.441-0.318-2.045c-0.396-0.604-1.034-1.007-1.75-1.105c-0.776-0.106-1.568-0.16-2.354-0.16
+                    c-12.637,0-25.152,13.19-30.434,32.076c-3.099,11.08-4.008,27.738,3.629,38.225c4.272,5.866,10.507,9,18.528,9.312
+                    c0.033,0.001,0.065,0.002,0.099,0.002c9.897,0,18.675-6.666,21.345-16.209C96.098,65.559,95.376,59.575,92.471,54.413z"></path>
+                </g>
+              </g>
+            </svg>
+            <h2 class="text-darkText text-[2.5rem] md:text-5xl lg:text-6xl uppercase leading-[3rem] md:leading-[3.5rem] lg:leading-[4.5rem] tracking-[4px] mt-[0.65rem]">We make<br>Staking<br>software<br><span class="font-regular text-[#00aeef]">so easy</span></h2>
+            <p class="font-['SpaceMono'] font-bold font-[18px] text-darkText uppercase ml-2 mt-10 tracking-[3.2px] max-w-[250px] md:max-w-[100%]">You can stake with your eyes closed</p>
+            <div class="swiper swiper-links h-[83px] ml-a md:ml-2 mr-0 md:mr-a mt-[2rem] md:mt-[3rem] lg:mt-[5.8rem] swiper-initialized swiper-vertical swiper-pointer-events swiper-backface-hidden">
+              <div class="swiper-wrapper" id="swiper-wrapper-d244d5b2c1612d8e" aria-live="off" style="transition-duration: 0ms; transform: translate3d(0px, -415px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="5" role="group" aria-label="6 / 6" style="height: 83px;">
+                  <a href="https://stakekilt.com" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">stakekilt.com</a>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 6" style="height: 83px;">
+                  <a href="https://stakeglmr.com" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">stakeglmr.com</a>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 6" style="height: 83px;">
+                  <a href="https://stakemovr.com" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">stakemovr.com</a>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 6" style="height: 83px;">
+                  <a href="https://polkawatch.io" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">polkawatch.io</a>
+                </div>
+                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" role="group" aria-label="4 / 6" style="height: 83px;">
+                  <a href="https://dvn.cy" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">dvn.cy</a>
+                </div>
+                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="4" role="group" aria-label="5 / 6" style="height: 83px;">
+                  <a href="https://stakepont.com" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">stakepont.com</a>
+                </div>
+                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="5" role="group" aria-label="6 / 6" style="height: 83px;">
+                  <a href="https://stakekilt.com" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">stakekilt.com</a>
+                </div>
+              <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" aria-label="1 / 6" style="height: 83px;">
+                  <a href="https://stakeglmr.com" class="hover:opacity-60 transition ease duration-150 uppercase font-bold text-[18px] text-darkText tracking-[4px]" target="_blank">stakeglmr.com</a>
+                </div></div>
+              <div class="swiper-pagination flex justify-end md:justify-start swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-vertical"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 5" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+        </section>
+        <section class="min-h-[60vh] h-auto 2xl:h-[620px] bg-[url('images/section-9@2x.jpg')] bg-no-repeat bg-cover bg-center sm:bg-[right_-30rem_center] lg:bg-right">
+          <div class="min-h-[60vh] h-auto 2xl:h-[620px] wrapper sm:w-11/12 lg:pl-[195px] ml-auto pl-[1rem] md:pl-[2rem]">
+            <div class="flex flex-col pt-[16.5vh] pb-[5%] 2xl:pt-[11%] pr-[1rem]">
+              <h2 class="text-[#2b2b2b] text-[1.5rem] md:text-[1.75rem] lg:text-[2.25rem] uppercase lg:tracking-[2.3px] lg:leading-[2.8rem]"><span class="font-regular text-[#d50c82]">Get in touch,</span><br>we are a fun bunch</h2>
+              <ul class="flex flex-col mt-[36px] sm:mt-[66px] pl-[6px]">
+                <li class="text-darkText font-['SpaceMono'] font-bold uppercase text-[18px] tracking-[0.9px]">+357 99174091</li>
+                <li class="text-darkText font-['SpaceMono'] font-bold  text-[18px] tracking-[0.9px] mt-[1.2rem]">
+                  <a href="mailto:contact@stakebaby.com" class="hover:opacity-6s0 transition duration-150 ease">contact(α)stakebaby.com</a>
+                </li>
+                <li class="text-darkText font-['SpaceMono'] font-bold  text-[18px] tracking-[0.9px] mt-[1.2rem]">
+                  <a href="https://www.stakebaby.com" target="_blank" class="hover:opacity-60 transition duration-150 ease">www.stakebaby.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>      
+    </div>
+    <!-- 
+        This is a place for Alpine.js Teleport feature 
+        @see https://alpinejs.dev/directives/teleport
+      -->
+    <div id="x-teleport-target"></div>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => Alpine.start());
+    </script>
+  </body>
+</html>
