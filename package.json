@@ -1,0 +1,19 @@
+{
+  "name": "lineone",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "_comment": "Build = Menghasilkan file CSS final (dengan optimasi untuk produksi), dev = Menghasilkan file CSS yang terus diperbarui setiap ada perubahan saat pengembangan. ",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css", 
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  }
+}
